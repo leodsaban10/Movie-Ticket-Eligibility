@@ -54,3 +54,43 @@ function checkAccess(role) {
     }
     return message;
 }
+
+
+function toCurrency(num) {
+    return num.toLocaleString("en-US", {
+        style: "currency",
+        currency: "USD"
+    });
+}
+console.log(toCurrency(123.45)); // "$123.45"
+
+// Alternative implementation using toFixed (less preferred for currency formatting)
+
+function toCurrency(num) {
+    return "$" + num.toFixed(2);
+}
+console.log(toCurrency(123.45)); // "$123.45"
+
+
+// Capitalize the first letter of a name
+let name = "alice";
+function greet(name) {  
+ return `Hello, ${name.charAt(0).toUpperCase() + name.slice(1)}!`;
+}
+
+console.log(greet(name)); // "Hello, Alice!"
+
+// Check if a username is at least 5 characters long
+let Username = "leo";
+function validUsernameCheck(username) {
+    if (username.length >=5) {
+        return "Valid username"
+    } else {
+        return "Username too short"
+    }
+}
+
+//returns "Valid username"
+//returns "Username too short"
+
+
