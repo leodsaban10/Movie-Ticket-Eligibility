@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(72, 65, 65);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 26px;
+    background-color: #ff4fff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+.button:hover {
+    background-color: #665bfb;
+}
+.button:active {
+    background-color: #52f665;
+}
