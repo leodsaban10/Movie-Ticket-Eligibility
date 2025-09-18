@@ -5,19 +5,25 @@ body {
     padding: 20px;
     text-align: center;
     justify-content: center;
-}
 .button {
+    /* Combined styles from both versions */
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 26px;
-    background-color: #ff4fff;
+    padding: 25px 70px; /* Use larger padding from remote */
+    font-size: 30px;    /* Use larger font-size from remote */
+    background-color: #ff4fff; /* Use local background, can adjust as needed */
     border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.1s ease;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
 }
 .button:hover {
     background-color: #665bfb;
 }
 .button:active {
     background-color: #52f665;
+}
 }
