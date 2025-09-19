@@ -1,13 +1,32 @@
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    border-radius: 15px;
-    color: white;
-    padding: 25px 70px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(72, 65, 65);
+    margin: 0;
+    padding: 20px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    margin: 4px 2px;
+.button {
+    padding: 25px 70px; 
+    font-size: 30px;    
+    background-color: #ea1c1c;
+    border-radius: 15px;
     cursor: pointer;
+    transition: background-color 0.1s ease;
+    color: white;
+    text-align: center;
+    margin: 4px 2px;
+}
+.button:hover {
+    background-color: #665bfb;
+}
+.button:active {
+    background-color: #52f665;
+}
+#fizzbuzz-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
 }
