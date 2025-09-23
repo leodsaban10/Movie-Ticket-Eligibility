@@ -20,3 +20,17 @@ class Dog extends Animal {
         super(name);
     }
 }
+
+class Point {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+}
+
+//data modeling: user class
+class User {
+    constructor(username, email)
+}
+
+//person, employee, role, hire date, pay rate
