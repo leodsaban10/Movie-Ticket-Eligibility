@@ -23,6 +23,11 @@
             font-weight: bold;
             text-transform: capitalize;
         }
+        .loading {
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+        }
         .pokemon-item {
             cursor: pointer;
             transition: background-color 0.3s;
@@ -30,31 +35,67 @@
         .pokemon-item:hover {
             background: #5a6b7a;
         }
+        #pokemon-display {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px 0;
+            min-height: 300px;
+        }
         #pokemon-details {
-            margin-top: 30px;
-            padding: 20px;
-            background: #f0f8ff;
-            border-radius: 10px;
-            border: 2px solid #677d90;
-            display: none;
+            background: #87ceeb;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            flex: 1;
+            max-width: 400px;
+            margin: 0 20px;
         }
         #pokemon-details h2 {
             margin-top: 0;
             text-transform: capitalize;
+            font-size: 24px;
+            color: #ffffff;
         }
         #pokemon-details img {
-            max-width: 200px;
+            max-width: 150px;
             height: auto;
+            margin-top: 10px;
+        }
+        .nav-button {
+            background: #87ceeb;
+            color: #333;
+            border: none;
+            padding: 20px 40px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 18px;
+            min-width: 120px;
+        }
+        .nav-button:hover {
+            background: #7bb8db;
+        }
+        .nav-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        #pokemon-list {
+            display: none;
         }
     </style>
 </head>
 <body>
     <div id="loading" class="loading">Pokemon</div>
-    <div id="pokemon-list"></div>
-    <div id="pokemon-details">
-        <h2 id="pokemon-name"></h2>
-        <img id="pokemon-image" src="" alt="Pokemon sprite">
+    <div id="pokemon-display">
+        <button id="prev-button" class="nav-button">Previous</button>
+        <div id="pokemon-details">
+            <h2 id="pokemon-name">Select a Pokemon</h2>
+            <img id="pokemon-image" src="" alt="Pokemon sprite" style="display: none;">
+        </div>
+        <button id="next-button" class="nav-button">Next</button>
     </div>
+    <div id="pokemon-list"></div>
     <script src="./pokemonAPI.js"></script>
 </body>
 </html>
