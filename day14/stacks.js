@@ -1,3 +1,5 @@
+//LIFO - last in first out
+
 //stack properties(methods):
 // push(element) - adds an element to the top of the stack
 // pop() - removes and returns the top element of the stack
