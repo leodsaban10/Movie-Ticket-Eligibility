@@ -8,4 +8,3 @@ function linearSearch(array, target) {
     }
     return -1
 }
-
